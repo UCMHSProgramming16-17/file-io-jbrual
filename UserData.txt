@@ -1,5 +1,0 @@
-Hello.
-Goodbye.
-Hola.
-Adios.
-Good Morning.
