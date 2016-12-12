@@ -1,0 +1,151 @@
+hello
+0
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+0 squared = 0
+1 squared = 1
+2 squared = 4
+3 squared = 9
+4 squared = 16
+5 squared = 25
+6 squared = 36
+7 squared = 49
+8 squared = 64
+9 squared = 81
+10 squared = 100
+11 squared = 121
+12 squared = 144
+13 squared = 169
+14 squared = 196
+15 squared = 225
+16 squared = 256
+17 squared = 289
+18 squared = 324
+19 squared = 361
+20 squared = 400
+21 squared = 441
+22 squared = 484
+23 squared = 529
+24 squared = 576
+25 squared = 625
+26 squared = 676
+27 squared = 729
+28 squared = 784
+29 squared = 841
+30 squared = 900
+31 squared = 961
+32 squared = 1024
+33 squared = 1089
+34 squared = 1156
+35 squared = 1225
+36 squared = 1296
+37 squared = 1369
+38 squared = 1444
+39 squared = 1521
+40 squared = 1600
+41 squared = 1681
+42 squared = 1764
+43 squared = 1849
+44 squared = 1936
+45 squared = 2025
+46 squared = 2116
+47 squared = 2209
+48 squared = 2304
+49 squared = 2401
+50 squared = 2500
+51 squared = 2601
+52 squared = 2704
+53 squared = 2809
+54 squared = 2916
+55 squared = 3025
+56 squared = 3136
+57 squared = 3249
+58 squared = 3364
+59 squared = 3481
+60 squared = 3600
+61 squared = 3721
+62 squared = 3844
+63 squared = 3969
+64 squared = 4096
+65 squared = 4225
+66 squared = 4356
+67 squared = 4489
+68 squared = 4624
+69 squared = 4761
+70 squared = 4900
+71 squared = 5041
+72 squared = 5184
+73 squared = 5329
+74 squared = 5476
+75 squared = 5625
+76 squared = 5776
+77 squared = 5929
+78 squared = 6084
+79 squared = 6241
+80 squared = 6400
+81 squared = 6561
+82 squared = 6724
+83 squared = 6889
+84 squared = 7056
+85 squared = 7225
+86 squared = 7396
+87 squared = 7569
+88 squared = 7744
+89 squared = 7921
+90 squared = 8100
+91 squared = 8281
+92 squared = 8464
+93 squared = 8649
+94 squared = 8836
+95 squared = 9025
+96 squared = 9216
+97 squared = 9409
+98 squared = 9604
+99 squared = 9801
