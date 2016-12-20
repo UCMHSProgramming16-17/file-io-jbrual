@@ -23,5 +23,12 @@ for pokemon in flying_list:
     speed_list = speed_results
     speed = speed_list["stats"][0]["base_stat"]
     csvwriter.writerow([name, speed])
-    
+
+csvsort = open("Flying.csv", "r")
+csvreader = csv.reader(csvsort, delimiter = ",")
+sort = sorted(csvreader,key=operator.itemgetter(1))
+
+for line in sort:
+    csvwriter.writerow([name, speed])
+
 csvfile.close()
