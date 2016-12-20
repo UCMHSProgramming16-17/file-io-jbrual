@@ -1,8 +1,9 @@
-# Q: What are the fastest Flying-type Pokemon?
+# Q: What are the ascending speeds of a given type of Pokemon?
 # Import the appropriate modules.
 import csv, requests, operator
 
 # Reach the API by building its URL.
+# Use user input to ask for a certain type.
 base_url = "http://pokeapi.co/api/v2/type/"
 type_poke = input("Select a type. ")
 url = base_url + type_poke
@@ -19,10 +20,11 @@ csvwriter = csv.writer(csvfile, delimiter = ",")
 # Establish header row.
 csvwriter.writerow(["Pokemon", "Speed"])
 
+# Create an empty dictionary to sort by values later on.
 type_pokemon = {}
 
-# For each Pokemon, determine its name and base speed stat
-# and write it to the .csv.
+# For each Pokemon, determine its name and base speed stat.
+# Export them into a dictionary as a list.
 for pokemon in type_list:
     name = pokemon["pokemon"]["name"]
     url = pokemon["pokemon"]["url"]
@@ -32,6 +34,12 @@ for pokemon in type_list:
     speed = speed_list["stats"][0]["base_stat"]
     type_pokemon[name] = speed
 
-sortedlist = sorted(type_pokemon, key = type_pokemon[1])
+# Sort by dictionary values.
+sortedlist = sorted(type_pokemon.items(), key = operator.itemgetter(1))
 
-print(sortedlist)
+# For each pokemon in the sorted list, write a row in the .csv file.
+for pokemon in sortedlist:
+    csvwriter.writerow(pokemon)
+
+# Close the .csv file.
+csvfile.close()
