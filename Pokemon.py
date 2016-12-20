@@ -3,35 +3,35 @@
 import csv, requests, operator
 
 # Reach the API by building its URL.
-base_url = "http://pokeapi.co/api/v2/"
-type_url = base_url + "type/"
-r = requests.get(type_url + "flying/")
+base_url = "http://pokeapi.co/api/v2/type/"
+type_poke = input("Select a type. ")
+url = base_url + type_poke
+r = requests.get(url)
 
 # Use .json format and use the appropriate dict. key.
 results = r.json()
-flying_list = results["pokemon"]
+type_list = results["pokemon"]
 
 # Create a .csv file for export data.
-csvfile = open("Flying.csv", "w")
+csvfile = open("Speeds.csv", "w")
 csvwriter = csv.writer(csvfile, delimiter = ",")
 
 # Establish header row.
 csvwriter.writerow(["Pokemon", "Speed"])
 
+type_pokemon = {}
+
 # For each Pokemon, determine its name and base speed stat
 # and write it to the .csv.
-for pokemon in flying_list:
+for pokemon in type_list:
     name = pokemon["pokemon"]["name"]
     url = pokemon["pokemon"]["url"]
     rspeed = requests.get(url)
     speed_results = rspeed.json()
     speed_list = speed_results
     speed = speed_list["stats"][0]["base_stat"]
-    csvwriter.writerow([name, speed])
+    type_pokemon[name] = speed
 
-data = csv.reader(open("Flying.csv"), delimiter = ",")
-sortedlist = sorted(data, key = operator.itemgetter(1))
-csvwriter.writerow(sortedlist)
+sortedlist = sorted(type_pokemon, key = type_pokemon[1])
 
-# Close the .csv.
-csvfile.close()
+print(sortedlist)
