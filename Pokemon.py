@@ -1,6 +1,6 @@
 # Q: What are the ascending speeds of a given type of Pokemon?
 # Import the appropriate modules.
-import csv, requests, operator
+import csv, requests, operator, pandas as pd, numpy as np
 
 # Reach the API by building its URL.
 # Use user input to ask for a certain type.
